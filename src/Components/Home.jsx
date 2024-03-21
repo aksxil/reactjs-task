@@ -45,7 +45,7 @@ const Home = () => {
   );
 
   return (
-    <div className='min-h-screen w-full custom-scrollbar'>
+    <div className='min-h-screen w-full custom-scrollbar pt-20'>
       <Navbar/>
       <AddProductForm onAddProduct={handleAddProduct} />
       <SearchBar searchTerm={searchTerm} onSearch={handleSearch} />

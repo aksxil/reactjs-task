@@ -12,7 +12,7 @@ const Login = () => {
   useEffect(() => {
     // Check if user is not authenticated (not logged in)
     if (localStorage.getItem('token')) {
-      // Redirect user to the login page
+      // Redirect user to the home page
       navigate('/');
     }
   }, [navigate]);
@@ -48,9 +48,9 @@ const Login = () => {
   };
 
   return (
-    <div className="items-center h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <Navbar/>
-      <form onSubmit={handleLogin} className="p-6 w-1/2 m-auto mt-10 bg-white rounded-lg shadow-md">
+      <form onSubmit={handleLogin} className="p-6 w-full md:h-screen lg:h-screen md:w-1/2 lg:w-1/3 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold mb-4">Login</h2>
         <input
           type="email"

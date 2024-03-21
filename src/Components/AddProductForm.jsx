@@ -30,22 +30,22 @@ const AddProductForm = ({ onAddProduct }) => {
   };
 
   return (
-    <div className="px-7 py-6 w-1/2 flex flex-col space-y-4">
+    <div className="px-4 py-6 sm:px-6 lg:px-8 lg:py-8 xl:w-1/2">
       <input
         type="text"
         placeholder="Product Name"
         value={productName}
         onChange={(e) => setProductName(e.target.value)}
-        className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+        className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
       />
       <input
         type="number"
         placeholder="Product Price"
         value={productPrice}
         onChange={(e) => setProductPrice(e.target.value)}
-        className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+        className="w-full mt-4 p-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
       />
-      <button onClick={handleAddProduct} className="w-1/4 bg-red-500 text-white py-2 rounded hover:bg-red-600">
+      <button onClick={handleAddProduct} className="w-full mt-4 bg-red-500 text-white py-3 rounded hover:bg-red-600">
         Add Product
       </button>
     </div>
